@@ -15,7 +15,7 @@ client.on('data', (data) => {
     console.log(data.toString());
 
     console.log('loading file');
-    file = fs.createReadStream('./testfile.exe');
+    file = fs.createReadStream('./largeImage.jpg');
     file.pipe(client);
 });
 
